@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulir Pendaftaran SIB</title>
+    </head>
+    <body>
+        <h2>Formulir Pendaftaran Studi Independen 2023 - PT. Arkatama Multi Solusindo</h2>
+        <form action="/proses-pendaftaran" method="post">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Maukkan Nama Lengkap"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Masukkan Email"><br><br>
+
+            <label for="no_hp">No. Handphone</label>
+            <input type="text" id="no_hp" name="no_hp" placeholder="Masukkan No HP"><br><br>
+
+            <label for="jenis_kelamin">Jenis Kelamin</label>
+            <input type="radio" id="pria" name="jenis_kelamin" value="pria" required>
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="jenis_kelamin" value="wanita" required>
+            <label for="wanita">Wanita</label><br><br>
+
+            <label for="prodi">Program Studi:</label>
+            <select name="prodi" id="prodi">
+                <option value="">Pilih Program studi</option>
+                <option value="TI">Teknik Informatika</option>
+                <option value="SI">Sistem Informasi</option>
+                <option value="MI">Manajemen Informatika</option>
+            </select><br><br>
+
+            <label for="Hobi">Hobi</label><br>
+            <input type="radio" id="memancing" name="Hobi" required>
+            <label for="memancing">Memancing</label><br>
+            <input type="radio" name="Hobi" id="main_layang-layang" required>
+            <label for="main_layang-layang">Main layang-layang</label><br>
+            <input type="radio" id="memasak" name="Hobi" required>
+            <label for="memasak">Memasak</label><br><br>
+
+            <label for="alamat">Alamat</label><br>
+            <textarea name="alamat" id="alamat"placeholder="Masukkan Alamat"cols="30" rows="10"></textarea><br><br>
+
+            <label for="foto">Foto Diri</label><br>
+            <input type="file" id="foto" name="foto" accept="image?*" required><br><br>
+
+            <input type="submit" value="Daftar">
+
+        </form>
+    </body>
+    </html>
